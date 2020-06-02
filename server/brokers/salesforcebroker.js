@@ -22,15 +22,11 @@ module.exports={
  
   
   /*
-  *  Listen on Platform Events
+  *  Listen for Platform Events or channel
   */
 
-   startReading: function (id,dt,transaction) {
+   startReading: function () {
             
-      var conn = new jsforce.Connection({
-        // you can change loginUrl to connect to sandbox or prerelease env.
-        loginUrl : 'https://login.salesforce.com'
-      });
 
       conn.login(process.env.SF_USERNAME, process.env.SF_PASSWORD, function(err, userInfo) {
 
