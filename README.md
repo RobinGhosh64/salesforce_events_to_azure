@@ -13,6 +13,7 @@ https://workbench.developerforce.com/restExplorer.php
 
 
 You need a .env file with 6 key values.
+<BR>
 SF_USERNAME=<Sales Force User ID><BR>
 SF_PASSWORD=<Sales Force password><BR>
 SF_CHANNEL=<Sales Force Channel path>  /event/ApiEventStream<BR>
@@ -24,7 +25,7 @@ LAW_NAME=<Name of Log Analytics Log Type><BR>
 To test locally:
     
     npm install
-    npm start or node server.js
+    npm start OR node server.js
 
 To deploy to Azure, create a App Service Plan, crank up a blank Web App using nodejs. Make sure it works.
-Go to the App Settings  and add these 5 variables and then deploy the code using push from IDE or pull using Deployment Center
+Go to the App Settings  and add these 6 variables and then deploy the code using push from Visual Studio Code or pull using Deployment Center
