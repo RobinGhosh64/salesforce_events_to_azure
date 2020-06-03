@@ -1,5 +1,5 @@
 # salesforce_events_to_azure
-Capture Events from Salesforce and write into Azure Log Analytics 
+Capture Events from Salesforce and write into Azure Log Analytics using NodeJS
 
 Salesforce provides a way to generate events from objects, sobjects, platform and messaging channels.
 Details are here:
