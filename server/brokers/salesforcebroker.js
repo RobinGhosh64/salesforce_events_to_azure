@@ -32,6 +32,8 @@ module.exports={
 
           if (err) { return console.error(err); }
 
+          var channelName = process.env.SF_CHANNEL;
+
           // Now you can get the access token and instance URL information.
           // Save them to establish connection next time.
           console.log(conn.accessToken);              // Salesforce returns a token key
@@ -40,7 +42,7 @@ module.exports={
           console.log("User ID: " + userInfo.id);
           console.log("Org ID: " + userInfo.organizationId);
 
-          conn.streaming.topic("/event/ApiEventStream").subscribe(function(content) {
+          conn.streaming.topic(channelName).subscribe(function(content) {
 
             console.dir(content);
             var workspace_id= process.env.LAW_ID;    //read our Log Analytics Workspace id

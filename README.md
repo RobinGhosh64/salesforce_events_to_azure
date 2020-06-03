@@ -12,13 +12,13 @@ Link to the workbench
 https://workbench.developerforce.com/restExplorer.php
 
 
-You need a .env file with 5 key values.
-SF_USERNAME=<Sales Force User ID>
-SF_PASSWORD=<Sales Force password>
-SF_CHANNEL=<Sales Force Channel path>  /event/ApiEventStream
-LAW_ID=<Log Analytics workspace id>
-LAW_KEY=<Log Analytics primary or secondary key>
-LAW_NAME=<Name of Log Analytics Log Type>
+You need a .env file with 6 key values.
+SF_USERNAME=<Sales Force User ID><BR>
+SF_PASSWORD=<Sales Force password><BR>
+SF_CHANNEL=<Sales Force Channel path>  /event/ApiEventStream<BR>
+LAW_ID=<Log Analytics workspace id><BR>
+LAW_KEY=<Log Analytics primary or secondary key><BR>
+LAW_NAME=<Name of Log Analytics Log Type><BR>
 
 
 To test locally:
